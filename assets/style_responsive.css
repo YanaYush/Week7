@@ -1,0 +1,77 @@
+.container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10% 1fr 10%;
+    height: 80vh;
+    text-align: center;
+
+}
+
+header {
+    grid-column: 1/4;
+}
+
+main {
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #FFF8E3;
+}
+
+aside {
+    grid-template-columns: 1fr;
+    background-color: #DDECCB;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column: 1/4;
+    justify-items: center;
+    text-align: center;
+}
+
+
+footer {
+    display: grid;
+    height: 10vh;
+    width: 50%;
+    background-color: #FAFAFA;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.items {
+    display: grid;
+    grid-template-areas: "a a a a b b b b "
+        "c c c c c c c c";
+    position: absolute;
+    gap: 50pt;
+    margin-left: 80pt;
+    width: 50%;
+    margin-top: 230px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.item1 {
+    grid-area: a;
+
+}
+
+.item2 {
+    grid-area: b;
+}
+
+.item3 {
+    grid-area: c;
+}
+
+.item1,
+.item2,
+.item3 {
+    background-color: #FEEAB9;
+    height: 50pt;
+
+
+}
